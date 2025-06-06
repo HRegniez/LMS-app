@@ -1,12 +1,13 @@
 import CompanionsList from '@/components/CompanionsList'
 import CompanionCard from '@/components/CompanionCard'
 import CTA from '@/components/CTA'
+import { recentSessions } from '@/constants'
 
 const Page = () => {
   return (
-    <div className='mx-auto max-w-7xl'>
-      <h1 >Popular Companions</h1>
-      <section className='home-section'>
+    <div className='mx-auto max-w-7xl pt-8'>
+      <h1>Popular Companions</h1>
+      <section className='home-section mt-4'>
         <CompanionCard 
           id="2"
           name="Artifika"
@@ -32,8 +33,12 @@ const Page = () => {
           color="#bde7ff"
         />
       </section>
-      <section className='home-section'>
-        <CompanionsList />
+      <section className='home-section mt-12'>
+        <CompanionsList 
+          title="Recently Viewed Lessons"
+          companions={recentSessions}
+          classNames="w-2/3 max-lg:w-full"
+        />
         <CTA />
       </section>
     </div>
