@@ -1,10 +1,10 @@
 import CompanionsList from '@/components/CompanionsList'
-import CompanionCard from '@/components/ui/CompanionCard'
+import CompanionCard from '@/components/CompanionCard'
 import CTA from '@/components/CTA'
 
 const Page = () => {
   return (
-    <div>
+    <div className='mx-auto max-w-7xl'>
       <h1 >Popular Companions</h1>
       <section className='home-section'>
         <CompanionCard 
