@@ -5,7 +5,7 @@ import { recentSessions } from '@/constants'
 
 const Page = () => {
   return (
-    <div className='mx-auto max-w-7xl pt-8'>
+    <div className='mx-auto max-w-7xl pt-8 px-2'>
       <h1>Popular Companions</h1>
       <section className='home-section mt-4'>
         <CompanionCard 
